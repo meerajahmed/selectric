@@ -1,0 +1,23 @@
+{
+  "name": "selectric",
+  "version": "0.1.0",
+  "description": "jQuery plugin for easy manipulation and customization of HTML selects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meerajahmed/selectric.git"
+  },
+  "author": "Meeraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meerajahmed/selectric/issues"
+  },
+  "homepage": "https://github.com/meerajahmed/selectric#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  }
+}
