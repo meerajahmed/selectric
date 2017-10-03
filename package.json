@@ -1,5 +1,5 @@
 {
-  "name": "selectric",
+  "name": "@meerajahmed/selectric",
   "version": "0.1.0",
   "description": "jQuery plugin for easy manipulation and customization of HTML selects",
   "main": "index.js",
