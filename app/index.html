@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectric</title>
+  <link rel="stylesheet" href="material.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--<h1>Menu Button</h1>-->
+<section>
+  <h2>Menu Button</h2>
+  <div class="menu_button">
+    <a id="id-menu-button" href="#" role="button" aria-controls="id-menu"
+       class="">Menu Button</a>
+    <ul id="id-menu" aria-labelledby="id-menu-button">
+      <li role="none">
+        <a href="https://www.w3.org/">W3C Home Page</a>
+      </li>
+      <li role="none">
+        <a href="https://www.w3.org/standards/webdesign/accessibility" role="menuitem">W3C Web Accessibility
+          Initiative</a>
+      </li>
+      <li role="none">
+        <a href="https://www.w3.org/TR/wai-aria/">Accessible Rich Internet Application Specification</a>
+      </li>
+      <li role="none">
+        <a href="https://www.w3.org/TR/wai-aria-practices/">WAI-ARIA Authoring Practices</a>
+      </li>
+      <li role="none">
+        <a href="https://www.w3.org/TR/wai-aria-implementation/">WAI-ARIA Implementation Guide</a>
+      </li>
+      <li role="none">
+        <a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section>
+  <h4>
+    <span>Examples</span>
+  </h4>
+  <ul>
+    <li>Navigation Menu Button: A menu button made from an
+      HTML <code>a</code> element that opens a menu of items that behave as links.
+    </li>
+    <li>Action Menu Button Example Using element.focus(): A
+      menu button made from an HTML <code>button</code> element that opens a menu of actions or commands where focus in
+      the menu is managed using <code>element.focus()</code>.
+    </li>
+    <li>Action Menu Button Example Using aria-activedescendant: A button that opens a menu of actions or commands where
+      focus in the menu is managed
+      using aria-activedescendant.
+    </li>
+  </ul>
+</section>
+<section>
+  <h4>Keyboard Interaction</h4>
+  <ul>
+    <li>With focus on the button:
+      <ul>
+        <li><kbd>Enter</kbd>: opens the menu and places focus on the first menu item.</li>
+        <li><kbd>Space</kbd>: Opens the menu and places focus on the first menu item.</li>
+        <li>(Optional) <kbd>Down Arrow</kbd>: opens the menu and moves focus to the first menu item.</li>
+        <li>(Optional) <kbd>Up Arrow</kbd>: opens the menu and moves focus to the last menu item.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+  <h4><span><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles, States, and Properties</span>
+  </h4>
+  <ul>
+    <li>The element that opens the menu has role <a href="https://www.w3.org/TR/wai-aria-1.1/#button">button</a>.</li>
+    <li>The element with role <code>button</code> has <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup">aria-haspopup</a>
+      set to <code>true</code>.
+    </li>
+    <li>
+      When the menu is displayed, the element with role <code>button</code> has
+      <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-expanded">aria-expanded</a> set to <code>true</code>. When the
+      menu is hidden, it is recommended that <code>aria-expanded</code> is not present. If <code>aria-expanded</code> is
+      specified when the menu is hidden, it is set to <code>false</code>.
+    </li>
+    <li>
+      The element that contains the menu items displayed by activating the button has role
+      <a href="https://www.w3.org/TR/wai-aria-1.1/#menu">menu</a>.
+    </li>
+    <li>
+      Optionally, the element with role <code>button</code> has a value specified for
+      <a href="https://www.w3.org/TR/wai-aria-1.1/#aria-controls">aria-controls</a> that refers to the element with role
+      <code>menu</code>.
+    </li>
+  </ul>
+</section>
+
+<script src="./shared.js"></script>
+<script src="./menuItemLinks.js"></script>
+<script src="./popupMenuLinks.js"></script>
+<script src="./menuButton.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

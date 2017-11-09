@@ -4,7 +4,8 @@
   "description": "jQuery plugin for easy manipulation and customization of HTML selects",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter nyan",
+    "dev": "http-server ./app -p 8000"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/meerajahmed/selectric#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "http-server": "^0.10.0",
+    "material-design-lite": "^1.3.0",
     "mocha": "^3.5.3"
   }
 }
